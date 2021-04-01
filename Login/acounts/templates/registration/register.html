@@ -1,0 +1,19 @@
+
+{% extends 'index.html' %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+{% block content %}
+    <h1>Create New Acount</h1>
+    <form method = "POST" >
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button>Registe</button>
+    </form>
+{% endblock %}
+
+</body>
+</html>
